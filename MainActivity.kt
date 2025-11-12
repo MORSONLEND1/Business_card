@@ -62,15 +62,11 @@ fun Greeting(modifier: Modifier = Modifier) {
         modifier = modifier
             .fillMaxSize()
             .background(color = MaterialTheme.colorScheme.background),
-        verticalArrangement = Arrangement.SpaceBetween, // <--- ИЗМЕНЕНИЕ ЗДЕСЬ
+        verticalArrangement = Arrangement.SpaceBetween,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         Column(
             horizontalAlignment = Alignment.CenterHorizontally,
-            // Добавляем вес, чтобы этот блок занял все доступное пространство,
-            // кроме того, что нужно GreetingContact.
-            // Также добавляем Arrangement.Center, чтобы содержимое было по центру
-            // этого взвешенного пространства.
             modifier = Modifier.weight(1f),
             verticalArrangement = Arrangement.Center
         ) {
